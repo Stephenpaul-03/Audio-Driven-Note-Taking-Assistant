@@ -1,0 +1,9 @@
+PyQt5
+sounddevice 
+transformers
+torch  
+numpy
+wave
+whisper
+transformers
+threading
