@@ -4,6 +4,66 @@
 
 Hermes is a Python-based application designed to record audio, transcribe it into text, and summarize the transcriptions. The application features a user-friendly interface built with PyQt5, making it accessible for users looking for an efficient audio processing tool.
 
+## Note
+
+Hermes requires FFmpeg to convert, stream, and manipulate audio files that are recorded. FFmpeg is a powerful open-source tool that helps process audio and video files, and it is an essential component of this project to ensure smooth audio handling and transcription.
+
+Please follow the steps below to install and configure FFmpeg on your system.
+
+#### 1. **Download FFmpeg**
+
+   - Go to the [FFmpeg official website](https://ffmpeg.org/download.html).
+   - Select the Package based on your Operating System.
+   - Download the latest version (e.g., `ffmpeg-release-essentials.zip`).
+
+#### 2. **Extract FFmpeg**
+
+   - Once downloaded, extract the zip file to a location on your computer. 
+     - Example: `C:\ffmpeg\`
+   - Inside the extracted folder, you should see a folder named `bin` containing the `ffmpeg.exe` file.
+
+#### 3. **Add FFmpeg to System PATH**
+
+   To make sure FFmpeg is available in your command line or any subprocess call (like Whisper), add its `bin` directory to your system's `PATH` environment variable:
+
+### On Windows:
+   1. Right-click **This PC** (or **My Computer**) and select **Properties**.
+   2. Click **Advanced system settings** on the left, then click **Environment Variables**.
+   3. Under **System variables**, scroll to find `Path` and select **Edit**.
+   4. In the edit window, click **New** and add the path to the `bin` directory of your FFmpeg folder. Example: `C:\ffmpeg\bin\`.
+   5. Click **OK** to save the changes.
+
+### On macOS and Linux:
+   1. Open the terminal.
+   2. Run the following command to open the `.bash_profile` or `.zshrc` file:
+      ```bash
+      nano ~/.bash_profile   # For bash users
+      nano ~/.zshrc           # For zsh users (default on macOS Catalina and above)
+      ```
+   3. Add the following line to the file:
+      ```bash
+      export PATH=$PATH:/path/to/ffmpeg/bin
+      ```
+   4. Save the file and close the editor.
+   5. Reload the profile:
+      ```bash
+      source ~/.bash_profile   # For bash users
+      source ~/.zshrc           # For zsh users
+      ```
+
+#### 4. **Verify FFmpeg Installation**
+
+   - Open a terminal (Command Prompt on Windows or Terminal on macOS/Linux).
+   - Type the following command to verify FFmpeg is installed:
+     ```bash
+     ffmpeg -version
+     ```
+   - You should see output showing FFmpeg’s version and configuration details.
+
+#### 5. **Run Your Application**
+
+   Once FFmpeg is installed and configured correctly, you can run your application.
+
 ## Features
 
 - **Audio Recording**: Start and stop audio recordings easily.
