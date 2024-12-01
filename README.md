@@ -1,12 +1,12 @@
-# Hermes
+# VoxNote
 
 ## Description
 
-Hermes is a Python-based application designed to record audio, transcribe it into text, and summarize the transcriptions. The application features a user-friendly interface built with PyQt5, making it accessible for users looking for an efficient audio processing tool.
+VoxNote is a Python-based application designed to record audio, transcribe it into text, and summarize the transcriptions. The application features a user-friendly interface built with PyQt5, making it accessible for users looking for an efficient audio processing tool.
 
 ## Note
 
-Hermes requires FFmpeg to convert, stream, and manipulate audio files that are recorded. FFmpeg is a powerful open-source tool that helps process audio and video files, and it is an essential component of this project to ensure smooth audio handling and transcription.
+VoxNote requires FFmpeg to convert, stream, and manipulate audio files that are recorded. FFmpeg is a powerful open-source tool that helps process audio and video files, and it is an essential component of this project to ensure smooth audio handling and transcription.
 
 Please follow the steps below to install and configure FFmpeg on your system.
 
@@ -73,7 +73,7 @@ Please follow the steps below to install and configure FFmpeg on your system.
 ## Project Structure
 
 ```
-Hermes/
+VoxNote/
 ├── main.py                     # Main application file
 ├── requirements.txt            # Dependencies required for the project
 ├── LICENSE                     # MIT License
@@ -89,16 +89,16 @@ Hermes/
 
 ## Installation
 
-To set up the Hermes on your local machine, follow these steps:
+To set up the VoxNote on your local machine, follow these steps:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/Stephenpaul-03/Hermes.git
+git clone https://github.com/Stephenpaul-03/VoxNote.git
 ```
 
 2. Navigate to Project Directory:
 ```bash
-cd Hermes
+cd VoxNote
 ```
 
 3. Install the dependencies:
